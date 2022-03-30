@@ -21,16 +21,19 @@ const AddTodo = ({ setTodos }) => {
   }
 
   return (
-    <div>
+    <div className='addtodo'>
       <form onSubmit={handleSubmit}>
-        <input 
-            type='text'
-            placeholder='Add Todo'
-            value={text} 
-            ref={inputRef}
-            onChange={handleChange}
-            />
-        <input type='submit' />
+        <div className='both-inputs'>
+          <input 
+              className='input'
+              type='text'
+              placeholder='Add Todo'
+              value={text} 
+              ref={inputRef}
+              onChange={handleChange}
+              />
+          <input type='submit' className='submit'/>
+        </div>
       </form>
     </div>
   )

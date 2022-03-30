@@ -14,8 +14,10 @@ export default function App() {
   return (
     <div>
       <h1>Todo List</h1>
-      <TodoList todos={todos} setTodos={setTodos}/>
-      <AddTodo setTodos={setTodos}/>
+      <div className='overall'>
+        <TodoList todos={todos} setTodos={setTodos}/>
+        <AddTodo setTodos={setTodos}/>
+      </div>
     </div>
   );
 }

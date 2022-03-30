@@ -1,5 +1,6 @@
 import React from 'react'
 import DeleteTodo from './DeleteTodo'
+import "./style.css";
 
 const TodoList = ({ todos, setTodos }) => {
   const handleToggle = (todo) => {
@@ -12,7 +13,7 @@ const TodoList = ({ todos, setTodos }) => {
   }
 
   const tasks = todos.map(todo => {
-    return <li
+    return <li className='list-style'
               style={{textDecoration: todo.done ? 'line-through' : ''}}
               key={todo.id}
               onDoubleClick={() => handleToggle(todo)}>

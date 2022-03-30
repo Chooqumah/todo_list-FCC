@@ -18,7 +18,7 @@ const DeleteTodo = ({ todo, setTodos}) => {
           style={{
             color: 'red',
             fontWeight: 'bold',
-            marginLeft: 90,
+            marginLeft: 10,
             cursor: 'pointer'
           }}
             >x</span>
